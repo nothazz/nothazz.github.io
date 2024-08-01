@@ -3,9 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>hazz</title>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <h1>Hello World!</h1>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="./assets/icon.jpg" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="./assets/icon.jpg" target="_blank">
+            <img src="./assets/icon.jpg" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          After all, it's just a matter of time...
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      @hazz
+    </div>
+
+    <div id="links">
+      <a class="link" href="https://github.com/nothazz" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://discord.com/users/1267730107565477909" target="_blank">
+        <i class="fab fa-discord">&nbsp;</i>Discord
+      </a>
+    </div>
+
+    <div id="hashtag">
+      Discord: @hazz07
+    </div>
   </body>
 </html>
