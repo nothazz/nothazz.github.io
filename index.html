@@ -1,57 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hazz</title>
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Core theme CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <!-- Parallax Pixel Background Animation -->
-    <section class="animated-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </section>
-    <!-- End of Parallax Pixel Background Animation -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 
-    <a id="profilePicture" href="#popup">
-      <img src="./assets/icon.jpg" alt="Profile Picture">
-    </a>
+  <script src="https://kit.fontawesome.com/b801578fa3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
 
-    <div class="overlay" id="popup">
-      <div class="popup">
-        <div class="popup-photo">
-          <a href="./assets/icon.jpg" target="_blank">
-            <img src="./assets/icon.jpg" alt="Profile Picture">
-          </a>
-        </div>
-        <div class="popup-quote">
-          After all, it's just a matter of time...
-        </div>
-        <a class="popup-close" onclick="history.back()">&times;</a>
+  <title>not hazz</title>
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="image-container">
+        <img src="./assets/icon.jpg" id="icon" alt="icon">
+        <div id="circle" class="circle"></div>
+      </div>
+      <div class="wrapper">
+        <div id="display_name"></div>
+        <div class="status" id="activitie_status"></div>
       </div>
     </div>
 
-    <div id="userName">
-      @hazz
-    </div>
-
-    <div id="links">
-      <a class="link" href="https://github.com/nothazz" target="_blank">
-        <i class="fab fa-github">&nbsp;</i>Github
-      </a>
-      <a class="link" href="https://discord.com/users/1267730107565477909" target="_blank">
-        <i class="fab fa-discord">&nbsp;</i>Discord
-      </a>
-    </div>
-
     <div id="hashtag">
-      Discord: @hazz07
+      <a href="https://github.com/nothazz" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://discordapp.com/users/1267730107565477909/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://range.wtf" target="_blank"><i class="fa-solid fa-globe"></i></a>
     </div>
-  </body>
+
+
+</body>
+<script src="script.js"></script>
+
 </html>
