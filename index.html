@@ -2,37 +2,222 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://kit.fontawesome.com/b801578fa3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-  <title>not hazz</title>
+    <script src="https://kit.fontawesome.com/b801578fa3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Hazz</title>
 </head>
 
+<style>
+    html {
+        background-image: url('./assets/wow.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .title h1 {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+
+    .description {
+        text-align: center;
+        font-weight: 600;
+        margin-top: 0;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        align-items: center;
+        background-color: #101010;
+        padding: 20px;
+        width: 600px;
+        border-style: solid;
+        border-color: red;
+        border-bottom: red;
+    }
+
+    .box-2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        align-items: center;
+        background-color: #101010;
+        padding: 20px;
+        width: 600px;
+        border-style: solid;
+        border-color: red;
+        border-bottom: red;
+    }
+
+    .social-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        top: 69%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        align-items: center;
+        background-color: #101010;
+        padding: 20px;
+        width: 600px;
+        border-style: solid;
+        border-color: red;
+        gap: 10px;
+    }
+
+    .social-box i {
+        font-size: 30px;
+        color: white;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+        border-radius: 17px;
+        margin: 10px;
+        margin-left: 98px;
+        width: 45%;
+    }
+
+    .container img {
+        display: flex;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+
+    .wrapper {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+        font-size: 18px;
+        font-weight: 550;
+    }
+
+    .wrapper .status {
+        font-size: 14px;
+        color: #a8a8a8;
+    }
+
+    .image-container {
+        position: relative;
+        width: fit-content;
+        display: inline-block;
+    }
+
+    .image-container img {
+        display: block;
+    }
+
+    .image-container .circle {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-size: cover;
+    }
+
+    #clickanywhere {
+            background-color: #080808;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0.95;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: large;
+        }
+</style>
+
+
 <body>
-
-    <div class="container">
-      <div class="image-container">
-        <img src="./assets/icon.jpg" id="icon" alt="icon">
-        <div id="circle" class="circle"></div>
-      </div>
-      <div class="wrapper">
-        <div id="display_name"></div>
-        <div class="status" id="activitie_status"></div>
-      </div>
+    <div class="box">
+        <div class="name">
+            <h1>hazz</h1>
+        </div>
+        <div class="description">
+            <p>Hello World</p>
+        </div>
     </div>
-
-    <div id="hashtag">
-      <a href="https://github.com/nothazz" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://discordapp.com/users/1267730107565477909/" target="_blank"><i class="fa-brands fa-discord"></i></a>
-      <a href="https://range.wtf" target="_blank"><i class="fa-solid fa-globe"></i></a>
+    <div class="box-2">
+        <div class="container">
+            <div class="image-container">
+                <img src="./assets/icon.png" id="icon" alt="icon">
+                <div id="circle" class="circle"></div>
+            </div>
+            <div class="wrapper">
+                <div id="display_name"></div>
+                <div class="status" id="activitie_status"></div>
+            </div>
+        </div>
     </div>
-
-
+    <div class="social-box">
+        <a href="https://discord.com/users/1267730107565477909" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://github.com/nothazz" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
 </body>
-<script src="script.js"></script>
+
+<div id="clickanywhere">
+    <p>click to enter</p>
+</div>
+
+<script src="./assets/js/script.js"></script>
+
+<audio id="audio" src="./assets/butterfly.mp3"></audio>
+
+<script>
+    document.addEventListener("click", function () {
+        var clickAnywhereElement = document.getElementById("clickanywhere");
+        clickAnywhereElement.style.opacity = "0";
+        setTimeout(function () {
+            clickAnywhereElement.style.display = "none";
+        }, 500);
+        document.getElementById("audio").play();
+    });
+
+</script>
 
 </html>
